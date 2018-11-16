@@ -1,0 +1,452 @@
+extends layout
+
+block vars
+    - let title = '旅游网'
+
+block content
+    // banner
+    .banner
+        // header
+        .header
+            .container
+                .header-logo
+                    a(href='/')
+                        img(src='/public/images/logo.png', alt='logo')
+                .top-nav
+                    span.menu  
+                    ul.nav1
+                        li
+                            a.active.scroll(href='/') 首页
+                        li
+                            a.scroll(href='#about') 关于我们
+                        li
+                            a.scroll(href='#portfolio') 投资合作
+                        li
+                            a.scroll(href='#team') 我们的团队
+                        li
+                            a.scroll(href='#blog') 微博
+                        li
+                            a.scroll(href='#contact') 联系我们
+                .clearfix  
+        // //header
+        .container
+            .banner-title
+                h5 梦想中的地方
+                h1
+                    span 旅行者 
+                    |  心目中的天堂，更多美丽的地方在等待着你的到来。
+                    span  行动起来吧
+                .download
+                    a(href='#') 在地图上显示
+    // //banner
+    #about.about
+        .container
+            h3 关于我们
+            span
+            p
+                | "火星人"——人是互联，社交的最基本元素，作为一家以人为本的互联网企业，团队是公司的核心竞争力，我们始终坚持用最前沿的技术助力企业转型互联网+，实现全球化，数据化和智能化
+    .about-bottom
+        .col-md-6.about-bottom-left
+            h4 我们是最棒的
+            p.top
+                | 人生，总有许多沟坎需要跨越
+                | 生命，总有许多迷茫需要领悟
+            p
+                | 生活的苦与乐总在更迭，没有谁的命运是完美的，残缺才是一种大美。快乐是精华，能让我们信心十足，痛苦是良药，能让我们顽强支撑。别为难自己，别苛求自己，拓宽自己的心，让它包容伤害和痛苦。心宽了，烦恼自然就少了，日子自然就顺了，人生自然就自在了。一首歌可以撩起一段记忆，一杯茶可以味染一份心情，当我们读懂了时光，才知道自己需要的是什么。一曲淡歌，几缕相思，挽留住一袭阳光，柔软了梦的声音。多少年，总是一个人静静地感受着生命，车水马龙的尘世间，人来人往的热闹、灯红酒绿的繁华，仿佛都与我无关。裹紧自己的衣衫，埋着只属于自己的心绪，看着自己脚尖，一步一步像游走的灵魂，前方是哪里？
+            .read-more
+                a(href='#')
+                    | 读取更多
+                    span
+        .col-md-6.about-bottom-right
+            img(src='/public/images/img1.jpg', alt='')
+        .clearfix  
+    .service
+        .container
+            h4 我们提供的服务
+            p
+                | Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                | consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                | feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            .service-grids
+                .col-md-4
+                    img(src='/public/images/icon1.png', alt='')
+                    h5 咨询
+                    p
+                        | Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
+                .col-md-4
+                    img(src='/public/images/icon2.png', alt='')
+                    h5 旅游行程
+                    p
+                        | Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
+                .col-md-4
+                    img(src='/public/images/icon3.png', alt='')
+                    h5 安全研究
+                    p
+                        | Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
+                .clearfix  
+    // skills
+    .skills
+        .container
+            h4 我们的优势
+            .skill-circles
+                .circle-grids
+                    #circles-1.circle
+                    lable 指导
+                .circle-grids
+                    #circles-2.circle
+                    lable 特殊优惠
+                .circle-grids
+                    #circles-3.circle
+                    lable 酒店
+                .circle-grids
+                    #circles-4.circle
+                    lable 美食
+                .circle-grids.crcl-5
+                    #circles-5.circle
+                    lable 咨询
+
+                .clearfix  
+    // project
+    #portfolio.projects.about
+        .container
+            h3 最近的一次旅行
+            span
+            p
+                | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+    .project-gallery
+        .gallery-grids
+            .gallery-grids-info
+                img(src='/public/images/img3.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img4.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img5.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img6.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .clearfix  
+        .project-portfolio
+            .container
+                h4 LATEST FROM TWITTER
+                p Trying out velositey - a simple website building extension for Photoshop.
+                a(href='#') buff.ly/NC8gog
+        .gallery-grids
+            .gallery-grids-info
+                img(src='/public/images/img3.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img4.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img5.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .gallery-grids-info
+                img(src='/public/images/img6.jpg', alt='')
+                .caption
+                    h4 PAPERCLIPS
+                    span
+                    p BRANDING
+            .clearfix  
+        .sea-all.read-more
+            a(href='#')
+                | 查看更多
+                span
+    // //project
+    // team
+    #team.team
+        .container
+            .about
+                h3 我们的团队成员
+                span
+                p
+                    | 最优秀的团队，给您带来最优秀的服务
+            .team-grids
+                .col-md-4.col-xs-12.team-grids-info
+                    img(src='/public/images/img7.jpg', alt='')
+                    .team-grids-text
+                        h3 米切尔·安德森
+                        h5 创意总监
+                    .icons
+                        ul
+                            li
+                                a(href='#')
+                            li
+                                a.fb(href='#')
+                            li
+                                a.in(href='#')
+                .col-md-4.col-xs-12.team-grids-info
+                    img(src='/public/images/img13.jpg', alt='')
+                    .team-grids-text
+                        h3 米切尔·安德森
+                        h5 创意总监
+                    .icons
+                        ul
+                            li
+                                a(href='#')
+                            li
+                                a.fb(href='#')
+                            li
+                                a.in(href='#')
+                .col-md-4.col-xs-12.team-grids-info
+                    img(src='/public/images/img7.jpg', alt='')
+                    .team-grids-text
+                        h3 米切尔·安德森
+                        h5 创意总监
+                    .icons
+                        ul
+                            li
+                                a(href='#')
+                            li
+                                a.fb(href='#')
+                            li
+                                a.in(href='#')
+                .clearfix  
+    // //team
+    // clients
+    .our-clients
+        .container
+            #top.callbacks_container
+                ul#slider3.rslides
+                    li
+                        h4 我们的客户
+                        p
+                            | “我也很高兴与伊姆兰工作。他工作非常努力，以满足我们的要求和通信是伟大的。他是非常敬业和专业。“
+                        span John Doe
+                        a(href='#') www.yourwebsite.zt
+                    li
+                        h4 我们的客户
+                        p
+                            | “我也很高兴与伊姆兰工作。他工作非常努力，以满足我们的要求和通信是伟大的。他是非常敬业和专业。“
+                        span Doe John
+                        a(href='#') www.yourwebsite.zt
+                    li
+                        h4 我们的客户
+                        p
+                            | “我也很高兴与伊姆兰工作。他工作非常努力，以满足我们的要求和通信是伟大的。他是非常敬业和专业。“
+                        span MR.John Doe
+                        a(href='#') www.yourwebsite.zt
+    // //clients
+    // blog
+    #blog.blog
+        .container
+            .about
+                h3 我们的博客
+                span  
+                p
+                    | 想更多的了解我们吗，那就登陆我们的博客，更多有趣新鲜的文章等你浏览
+            .blog-grids
+                .blog-grids-left
+
+                    #top.callbacks_container
+                        ul#slider4.rslides
+                            li
+                                img(src='/public/images/img8.jpg', alt='')
+                            li
+                                img(src='/public/images/img9.jpg', alt='')
+                            li
+                                img(src='/public/images/img10.jpg', alt='')
+                .blog-grids-right
+                    span 10 April 2014
+                    h4
+                        a(href='#') 怀柔神堂峪旅游攻略
+                    p
+                        | 驿捷度假连锁酒店(怀柔神堂峪店)坐落于神堂峪风景区脚下的雁栖镇官地村，依山傍水，别样雅致。这里融山川、河流、奇峰、怪石及古长城为一体，是一个环境幽静、没有干扰、没有污染、仙镜般的世外桃源。闻名的雁栖河贵穿全区，水质清纯，流水不断。天然形成的龙潭、鸳鸯池、鳄鱼潭、水城宽阔，清澈见底。智者乐山，仁者乐水，来到山水环绕的驿捷神堂峪店，您即是乐者，更是智者。
+                        a.bracket(href='#') [...]
+                .clearfix  
+                .caption-imag
+                    .round-shape
+                        p a
+            .blog-grids
+                .blog-grids-left.lt-text
+                    span 20 March 2014
+                    h4
+                        a(href='#') 怀柔神堂峪旅游攻略
+                    p
+                        | 驿捷度假连锁酒店(怀柔神堂峪店)坐落于神堂峪风景区脚下的雁栖镇官地村，依山傍水，别样雅致。这里融山川、河流、奇峰、怪石及古长城为一体，是一个环境幽静、没有干扰、没有污染、仙镜般的世外桃源。闻名的雁栖河贵穿全区，水质清纯，流水不断。天然形成的龙潭、鸳鸯池、鳄鱼潭、水城宽阔，清澈见底。智者乐山，仁者乐水，来到山水环绕的驿捷神堂峪店，您即是乐者，更是智者。
+                        a.bracket(href='#') [...]
+                .blog-grids-right.rt-img
+                    a(href='#')
+                        img(src='/public/images/img11.jpg', alt='')
+                .clearfix  
+                .caption-imag
+                    .round-shape
+                        p a
+            .blog-grids
+                .blog-grids-left
+                    a(href='#')
+                        img(src='/public/images/img12.jpg', alt='')
+                .blog-grids-right
+                    span 10 January 2014
+                    h4
+                        a(href='#') 怀柔神堂峪旅游攻略
+                    p
+                        |驿捷度假连锁酒店(怀柔神堂峪店)坐落于神堂峪风景区脚下的雁栖镇官地村，依山傍水，别样雅致。这里融山川、河流、奇峰、怪石及古长城为一体，是一个环境幽静、没有干扰、没有污染、仙镜般的世外桃源。闻名的雁栖河贵穿全区，水质清纯，流水不断。天然形成的龙潭、鸳鸯池、鳄鱼潭、水城宽阔，清澈见底。智者乐山，仁者乐水，来到山水环绕的驿捷神堂峪店，您即是乐者，更是智者。
+                        a.bracket(href='#') [...]
+                .clearfix  
+                .caption-imag
+                    .round-shape
+                        p a
+    // //blog
+    // contact
+    .contact
+        #contact.container
+            h3 联系我们
+            form
+                input(type='text', value='姓名*', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Name*';}", required='')
+                input(type='email', value='邮箱*', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email*';}", required='')
+                textarea(type='text', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Message...';}", required='') 信息...
+                input(type='submit', value='提交')
+    // //contact
+    // footer
+    .footer
+        .container
+            .footer-grids
+                .col-md-3.footer-logo
+                    a(href='/')
+                        img(src='/public/images/logo.png', alt='logo')
+                    p
+                        | 我们采用了独有的技术开发方式，最求最低成本下质量最高细节完美。与运营结合的技术思维和丰富的案例实践经验为企业提供最专业最可靠技术平台服务。
+                    p.logo-text
+                        | 充分发挥数据优势和机器学习的优势，以最实时的方式监测产品和服务质量，并能以开放的方式进行深度的业务分析，帮助用户全面掌握每一份有效数据，做最精准的商业决策。
+                .col-md-3.recent-posts
+                    h4 最近的帖子
+                    .recent-posts-text
+                        h5 2018年10月30日
+                        p 怀柔神堂峪旅游攻略
+                    .recent-posts-text
+                        h5 2018年10月30日
+                        p 怀柔神堂峪旅游攻略
+                    .recent-posts-text
+                        h5 2018年10月30日
+                        p 怀柔神堂峪旅游攻略
+                .col-md-3.recent-posts
+                    h4 推特交流版
+                    .recent-posts-text
+                        h5
+                            | 大约两天前
+                            span @kristianplatt
+                        p 托尼
+                    .recent-posts-text
+                        h5
+                            | 大约两天前
+                            span @fasteven
+                        p 詹姆斯
+                    .recent-posts-text
+                        h5
+                            | 大约两天前
+                            span @streamer
+                        p 皮特
+                .col-md-3.address
+                    h4 我们的地址
+                    p
+                        | Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+                        | luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
+                    ul
+                        li
+                            span
+                            | Moonshine St. 14/05 Light, Jupiter
+                        li
+                            span.ph-no
+                            | +00 (123) 456 78 90
+                        li
+                            span.mail
+                            a(href='mailto:example@email.com') mail@example.com
+                .clearfix  
+
+    .footer-bottom
+        p
+            | Copyright © 2015.Company name All rights reserved.
+            a(target='_blank', href='http://www.cssmoban.com/') 网页模板
+            |  - Collect from 
+            a(href='http://www.cssmoban.com/') 企业网站模板
+
+    script(type='text/javascript').
+        
+    a#toTop(href='#', style='display: block;')
+        span#toTopHover(style='opacity: 1;')  
+
+
+block script
+    script.
+        $( "span.menu" ).click(function() {
+            $( "ul.nav1" ).slideToggle( 300, function() {
+        // Animation complete.
+            });
+        });
+
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+         });
+            $(function () {
+            $("#slider4").responsiveSlides({
+            auto: true,
+            pager:true,
+            nav:true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+            $('.events').append("<li>before event fired.</li>");
+             },
+            after: function () {
+            $('.events').append("<li>after event fired.</li>");
+                     }
+                });
+            });
+
+          
+            $(function () {
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager:true,
+                    nav:false,
+                    speed: 500,
+                    namespace: "callbacks",
+                before: function () {
+                $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                $('.events').append("<li>after event fired.</li>");
+                }
+                });
+            });
+
+             var colors = [
+                    ['#79796D', '#FFFFFF'], ['rgb(69, 69, 59)', '#FFFFFF'], ['#1F1E19', '#FFFFFF'], ['#1F1E19', '#FFFFFF'],['#0F0E0A', '#FFFFFF']
+                    ];
+                    for (var i = 1; i <= 5; i++) {
+                    var child = document.getElementById('circles-' + i),
+                    percentage = 75;
+                    Circles.create({
+                    id:         child.id,
+                    percentage: 75,
+                    radius:     80,
+                    width:      4,
+                    number:   	85,
+                    text:       '%',
+                    colors:     colors[i - 1]
+                    });
+                    }
